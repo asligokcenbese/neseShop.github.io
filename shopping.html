@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./cssM/materialize.min.css"  media="screen,projection"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="icon" type="image/x-icon" href="pics/favicon.png">
+    <link rel="stylesheet" href="shopping.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <script type="text/javascript" src="scripts/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <header>
+        
+        <div class="nav container">
+            <img id="logoNese" src="./pics/logo.png">
+
+            <input type="text" id="search-box" placeholder=" Search product..">
+            <i class='bx bx-search-alt' id="search-icon"></i>
+            
+            <i class='bx bxs-shopping-bags' id="cart-icon" ></i>
+
+            <div id="profile"><span id="welcomeText">Welcome,</span><span id="loggedInUser"></span>!</div>
+            
+
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+                   
+                </div>
+
+                <!--Total-->
+
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!--Buy Button-->
+                <button class="btn waves-effect waves-light" type="button">Buy Now</button>
+
+                <i class='bx bx-x-circle' id="close-cart"></i>
+            </div>
+
+        </div>
+    </header>
+    <section id="cart-section" class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+
+
+        <div class="shop-content">
+
+            <div class="product-box" data-product-id="1">
+                <img src="pics/New-Mockups---no-hanger---TShirt-Yellow.webp" alt="" class="product-img">
+                <h2 class="product-title">Yellow t-shirt</h2>
+                <span class="price">$35</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box" data-product-id="2">
+                <img src="pics/t1.webp" alt="" class="product-img">
+                <h2 class="product-title">Grey T-shirt</h2>
+                <span class="price">$30</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="3">
+                <img src="pics/t2.webp" alt="" class="product-img">
+                <h2 class="product-title">Black T-shirt</h2>
+                <span class="price">$25</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box" data-product-id="4">
+                <img src="pics/t5.webp" alt="" class="product-img">
+                <h2 class="product-title">White T-shirt</h2>
+                <span class="price">$25</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box" data-product-id="5">
+                <img src="pics/a4.webp" alt="" class="product-img">
+                <h2 class="product-title">White&Grey Shoes</h2>
+                <span class="price">$110</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="6">
+                <img src="pics/a1.webp" alt="" class="product-img">
+                <h2 class="product-title">Red&White Shoes</h2>
+                <span class="price">$150</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="7">
+                <img src="pics/a2.webp" alt="" class="product-img">
+                <h2 class="product-title">Blue&Black Shoes</h2>
+                <span class="price">$130</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="8">
+                <img src="pics/a3.webp" alt="" class="product-img">
+                <h2 class="product-title">Black&White Shoes</h2>
+                <span class="price">$135</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="9">
+                <img src="pics/sunglasses.webp" alt="" class="product-img">
+                <h2 class="product-title">Black Sunglasses</h2>
+                <span class="price">$75</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="10">
+                <img src="pics/s1.webp" alt="" class="product-img">
+                <h2 class="product-title">Yellow Sunglasses</h2>
+                <span class="price">$80</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="11">
+                <img src="pics/s5.webp" alt="" class="product-img">
+                <h2 class="product-title">Leopar Sunglasses</h2>
+                <span class="price">$80</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box" data-product-id="12">
+                <img src="pics/s3.webp" alt="" class="product-img">
+                <h2 class="product-title">Thin Sunglasses</h2>
+                <span class="price">$90</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="13">
+                <img src="pics/termos.webp" alt="" class="product-img">
+                <h2 class="product-title">Thermos Black</h2>
+                <span class="price">$155</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="14">
+                <img src="pics/tr1.webp" alt="" class="product-img">
+                <h2 class="product-title">Thermos Dark Grey</h2>
+                <span class="price">$100</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="15">
+                <img src="pics/tr2.webp" alt="" class="product-img">
+                <h2 class="product-title">Thermos Light Grey</h2>
+                <span class="price">$110</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="16">
+                <img src="pics/tr3.webp" alt="" class="product-img">
+                <h2 class="product-title">Thermos White</h2>
+                <span class="price">$180</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="17">
+                <img src="pics/k1.webp" alt="" class="product-img">
+                <h2 class="product-title">Sweater</h2>
+                <span class="price">$50</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="18">
+                <img src="pics/k2.webp" alt="" class="product-img">
+                <h2 class="product-title">Lined Sweater</h2>
+                <span class="price">$45</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="19">
+                <img src="pics/k3.webp" alt="" class="product-img">
+                <h2 class="product-title">Grey Hoodie   </h2>
+                <span class="price">$40</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="20">
+                <img src="pics/sw2.jpg" alt="" class="product-img">
+                <h2 class="product-title">Green Sweater</h2>
+                <span class="price">$55</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="21">
+                <img src="pics/c2.webp" alt="" class="product-img">
+                <h2 class="product-title">Couch White</h2>
+                <span class="price">$180</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="22">
+                <img src="pics/c5.webp" alt="" class="product-img">
+                <h2 class="product-title">Couch Grey</h2>
+                <span class="price">$190</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="23">
+                <img src="pics/c4.webp" alt="" class="product-img">
+                <h2 class="product-title">Couch Beige</h2>
+                <span class="price">$200</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="24">
+                <img src="pics/c11.webp" alt="" class="product-img">
+                <h2 class="product-title">Couch Light Brown</h2>
+                <span class="price">$150</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            
+            <div class="product-box"data-product-id="25">
+                <img src="pics/b5.webp" alt="" class="product-img">
+                <h2 class="product-title">White Purse</h2>
+                <span class="price">$90</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="26">
+                <img src="pics/b1.webp" alt="" class="product-img">
+                <h2 class="product-title">Black&White Purse</h2>
+                <span class="price">$86</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="27">
+                <img src="pics/b2.webp" alt="" class="product-img">
+                <h2 class="product-title">Diamonds Purse</h2>
+                <span class="price">$85</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="28">
+                <img src="pics/b3.webp" alt="" class="product-img">
+                <h2 class="product-title">Brown Purse</h2>
+                <span class="price">$57</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="29">
+                <img src="pics/w5.webp" alt="" class="product-img">
+                <h2 class="product-title">Grey Watch</h2>
+                <span class="price">$280</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="30">
+                <img src="pics/ww5.webp" alt="" class="product-img">
+                <h2 class="product-title">Black Watch</h2>
+                <span class="price">$360</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="31">
+                <img src="pics/w2.webp" alt="" class="product-img">
+                <h2 class="product-title">Brown Watch</h2>
+                <span class="price">$300</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+            <div class="product-box"data-product-id="32">
+                <img src="pics/w3.webp" alt="" class="product-img">
+                <h2 class="product-title">Black&White Watch</h2>
+                <span class="price">$275</span>
+                <i class='bx bxs-shopping-bags add-cart'></i>
+                <button class="view-details">View Details</button>
+            </div>
+           
+           
+        </div>
+    </section>
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modal-product-img" src="" alt="Product Image">
+            <h2 id="modal-product-title">Product Title</h2>
+            <p id="modal-product-price">Product Price</p>
+        </div>
+    </div>
+
+     <!-- Cookie Banner -->
+     <div id="cookie-banner">
+        <p>We use cookies to improve your experience. By using our site, you agree to our use of cookies.</p>
+        <button id="cookie-ok">OK, Close</button>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#cookie-ok').on('click', function() {
+                $('#cookie-banner').hide();
+            });
+
+            // Display logged in user on main page
+            if (window.location.pathname.includes('shopping.html')) {
+                let loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+                if (loggedInUser) {
+                    $("#loggedInUser").text(`${loggedInUser.name} ${loggedInUser.surname}`);
+                } else {
+                    window.location.href = "../loginOperations/login.html";
+                }
+            }
+        });
+    </script>
+
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="./shopping.js"></script>
+</body>
+</html>
